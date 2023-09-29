@@ -79,7 +79,7 @@ const LoginScreen = () => {
           </Text>
         </View>
 
-        <View style={{ marginTop: 70 }}>
+        <View style={{ marginTop: 30 }}>
           <View
             style={{
               flexDirection: "row",
