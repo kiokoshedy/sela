@@ -32,3 +32,5 @@ mongoose
 app.listen(port, () => {
   console.log("Connected to port 8000.");
 });
+
+//Endpoint to register the app
