@@ -188,7 +188,7 @@ const RegisterScreen = () => {
           </Text>
         </View>
 
-        <View style={{ marginTop: 80 }} />
+        <View style={{ marginTop: 50 }} />
 
         <Pressable
           onPress={handleRegister}
