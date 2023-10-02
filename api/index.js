@@ -46,13 +46,13 @@ const sendVerificationEmail = async (email, verificationToken) => {
     service: "gmail",
     auth: {
       user: "skmusembi@gmail.com",
-      pass: "wkkjjprzkqxtboju",
+      pass: "zptztvdigqmbeija",
     },
   });
 
   // Compose the email message
   const mailOptions = {
-    from: "amazon.com",
+    from: "kioko.com",
     to: email,
     subject: "Email Verification",
     text: `Please click the following link to verify your email: http://localhost:8000/verify/${verificationToken}`,
