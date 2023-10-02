@@ -34,3 +34,4 @@ app.listen(port, () => {
 });
 
 //Endpoint to register the app
+app.post
