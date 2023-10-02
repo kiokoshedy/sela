@@ -181,11 +181,7 @@ const RegisterScreen = () => {
             justifyContent: "space-between",
           }}
         >
-          <Text>Keep me logged in</Text>
-
-          <Text style={{ color: "#007FFF", fontWeight: "500" }}>
-            Forgot Password
-          </Text>
+         
         </View>
 
         <View style={{ marginTop: 50 }} />
