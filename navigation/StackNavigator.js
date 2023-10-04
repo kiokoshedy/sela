@@ -34,7 +34,7 @@ const StackNavigator = () => {
 
         <Tab.Screen
           name="Profile"
-          component={ProfileScreen}
+          component={HomeScreen}
           options={{
             tabBarLabel: "Profile",
             tabBarLabelStyle: { color: "#008E97" },
@@ -49,7 +49,7 @@ const StackNavigator = () => {
 
         <Tab.Screen
           name="Cart"
-          component={CartScreen}
+          component={HomeScreen}
           options={{
             tabBarLabel: "Cart",
             tabBarLabelStyle: { color: "#008E97" },
@@ -70,7 +70,7 @@ const StackNavigator = () => {
       <Stack.Navigator>
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Register" component={RegisterScreen} />
-        <Stack.Screen name="Main" component={HomeScreen} />
+        <Stack.Screen name="Main" component={BottomTabs} />
       </Stack.Navigator>
     </NavigationContainer>
   );
