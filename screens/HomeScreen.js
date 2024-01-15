@@ -23,7 +23,7 @@ import { useNavigation } from "@react-navigation/native";
 import { useSelector } from "react-redux";
 import { BottomModal, SlideAnimation, ModalContent } from "react-native-modals";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { UserType } from "../UserContext";
+import { UserType } from "../U";
 import jwt_decode from "jwt-decode";
 
 const HomeScreen = () => {
