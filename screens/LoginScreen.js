@@ -7,7 +7,6 @@ import {
   KeyboardAvoidingView,
   TextInput,
   Pressable,
-  Alert,
 } from "react-native";
 import React, { useState,useEffect } from "react";
 import { MaterialIcons } from "@expo/vector-icons";
@@ -55,7 +54,7 @@ const LoginScreen = () => {
   };
   return (
     <SafeAreaView
-      style={{ flex: 1, backgroundColor: "white", alignItems: "center" }}
+      style={{ flex: 1, backgroundColor: "white", alignItems: "center",marginTop:50 }}
     >
       <View>
         <Image
@@ -80,7 +79,7 @@ const LoginScreen = () => {
           </Text>
         </View>
 
-        <View style={{ marginTop: 30 }}>
+        <View style={{ marginTop: 70 }}>
           <View
             style={{
               flexDirection: "row",
@@ -146,6 +145,7 @@ const LoginScreen = () => {
             />
           </View>
         </View>
+
         <View
           style={{
             marginTop: 12,

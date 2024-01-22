@@ -196,15 +196,14 @@ const HomeScreen = () => {
       size: "8GB RAM, 128GB Storage",
     },
   ];
-
   const [products, setProducts] = useState([]);
   const navigation = useNavigation();
   const [open, setOpen] = useState(false);
   const [addresses, setAddresses] = useState([]);
   const [category, setCategory] = useState("jewelery");
   const { userId, setUserId } = useContext(UserType);
-  const [selectedAddress, setSelectedAdress] = useState("");
-  console.log(selectedAddress);
+  const [selectedAddress,setSelectedAdress] = useState("");
+  console.log(selectedAddress)
   const [items, setItems] = useState([
     { label: "Men's clothing", value: "men's clothing" },
     { label: "jewelery", value: "jewelery" },
@@ -257,7 +256,6 @@ const HomeScreen = () => {
     fetchUser();
   }, []);
   console.log("address", addresses);
-
   return (
     <>
       <SafeAreaView
@@ -313,13 +311,13 @@ const HomeScreen = () => {
             <Ionicons name="location-outline" size={24} color="black" />
 
             <Pressable>
-              {selectedAddress ? (
+            {selectedAddress ? (
                 <Text>
                   Deliver to {selectedAddress?.name} - {selectedAddress?.street}
                 </Text>
               ) : (
                 <Text style={{ fontSize: 13, fontWeight: "500" }}>
-                  Add a Address
+                    Add a Address
                 </Text>
               )}
             </Pressable>
@@ -552,7 +550,7 @@ const HomeScreen = () => {
             {/* already added addresses */}
             {addresses?.map((item, index) => (
               <Pressable
-                onPress={() => setSelectedAdress(item)}
+              onPress={() => setSelectedAdress(item)}
                 style={{
                   width: 140,
                   height: 140,
@@ -564,8 +562,7 @@ const HomeScreen = () => {
                   gap: 3,
                   marginRight: 15,
                   marginTop: 10,
-                  backgroundColor:
-                    selectedAddress === item ? "#FBCEB1" : "white",
+                  backgroundColor:selectedAddress === item ? "#FBCEB1" : "white"
                 }}
               >
                 <View

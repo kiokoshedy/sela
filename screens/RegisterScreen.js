@@ -51,7 +51,7 @@ const RegisterScreen = () => {
   };
   return (
     <SafeAreaView
-      style={{ flex: 1, backgroundColor: "white", alignItems: "center" }}
+      style={{ flex: 1, backgroundColor: "white", alignItems: "center",marginTop:50  }}
     >
       <View>
         <Image
@@ -59,7 +59,6 @@ const RegisterScreen = () => {
           source={{
             uri: "https://assets.stickpng.com/thumbs/6160562276000b00045a7d97.png",
           }}
-          
         />
       </View>
 
@@ -77,7 +76,7 @@ const RegisterScreen = () => {
           </Text>
         </View>
 
-        <View style={{ marginTop: 30 }}>
+        <View style={{ marginTop: 70 }}>
           <View
             style={{
               flexDirection: "row",
@@ -182,10 +181,14 @@ const RegisterScreen = () => {
             justifyContent: "space-between",
           }}
         >
-         
+          <Text>Keep me logged in</Text>
+
+          <Text style={{ color: "#007FFF", fontWeight: "500" }}>
+            Forgot Password
+          </Text>
         </View>
 
-        <View style={{ marginTop: 50 }} />
+        <View style={{ marginTop: 80 }} />
 
         <Pressable
           onPress={handleRegister}
